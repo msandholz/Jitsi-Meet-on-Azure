@@ -2,12 +2,12 @@ Create VM on Azsure
 
 
 
-1. SSH to VM: 'markus_sandholz@Azure:~$ ssh azureuser@20.71.207.224'
+1. SSH to VM: 'markus_sandholz@Azure:~$ ssh markus@<IP-Adresse>'
 2. Set Timezone: 'sudo timedatectl set-timezone Europe/Berlin'
 
 NGINX installation
 1. Update LINUX: 'sudo apt update'
-2. Install NGINX: 'sudo install nginx'
+2. Install NGINX: 'sudo apt install nginx'
 3. Enable NGNIX: 'sudo systemctl enable nginx'
 
 Jitsi Meet installation
@@ -20,5 +20,5 @@ Jitsi Meet installation
   a) 'apt-get install apt-transport-https'
   b) 'apt update'
   c) 'apt-get -y install jitsi-meet'
-5. Hostname of video-bridge: 'jitsi-videobridge'
+5. Hostname of video-bridge: 'meet-sandholz.germanywestcentral.cloudapp.azure.com'
 6. Generate Certificate: '/usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh' 
